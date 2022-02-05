@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-header{
+    @apply flex justify-between items-center py-4 border-b border-border;
+}
+
+.section-header__button{
+    @apply flex flex-nowrap items-center gap-2 text-accent hover:text-accent-lite active:text-accent-dark;
+}
+
+.section-header__button__text{
+    @apply font-bold uppercase text-lg;
+}
+.section-header__text{
+    @apply font-bold text-xl uppercase;
+}
+
+.button{
+    @apply px-3 py-2 h-[42px] leading-none uppercase bg-accent text-white font-bold hover:bg-accent-lite active:bg-accent-dark active:drop-shadow-md
+}
+
+/* APP CSS */
+.app-auto-fit{
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr));
+}
+/* Utilities */
+.scroll-lock{
+    @apply fixed;
+}
+/* BEM */
+.drawer{
+    @apply fixed w-screen z-30 bg-black/30 h-screen transition-all;
+}
+.drawer--open{
+    @apply top-0 duration-500;
+}
+.drawer--close{
+    @apply -top-[100vh] duration-100;
+}

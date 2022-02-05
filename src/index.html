@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sportblog</title>
+  </head>
+  <body class="bg-background">
+    <!-- navbar -->
+    <nav class="bg-primary fixed top-0 w-full z-40">
+      <div class="container p-1 flex justify-between items-center">
+        <div class="flex flex-col gap-1 transition-all relative" id="ham">
+          <span
+            class="w-6 h-1 bg-text-secondary block rounded-md ham__arms"
+          ></span>
+          <span
+            class="w-6 h-1 bg-text-secondary block rounded-md ham__arms"
+          ></span>
+          <span
+            class="w-6 h-1 bg-text-secondary block rounded-md ham__arms"
+          ></span>
+          <span
+            class="w-7 h-1 bg-text-secondary block rounded-md ham__arms--cross opacity-0 absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 rotate-45"
+          ></span>
+          <span
+            class="w-7 h-1 bg-text-secondary block rounded-md ham__arms--cross opacity-0 absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 -rotate-45"
+          ></span>
+        </div>
+        <div>
+          <h1 class="text-text-secondary text-xl font-bold">Sportblog</h1>
+        </div>
+        <div>
+          <img src="/static/images/subscribe.svg" alt="" class="w-8" />
+        </div>
+      </div>
+    </nav>
+    <!-- drawer -->
+    <nav id="drawer" class="drawer drawer--close">
+      <div
+        class="max-w-[480px] w-full h-full bg-footer overflow-auto drop-shadow"
+      >
+        <div class="w-full max-w-[360px] mx-auto">
+          <form class="flex px-4 pb-5 pt-14 border-b border-primary">
+            <input
+              type="text"
+              name="search"
+              placeholder="Search"
+              id="search"
+              class="flex-1"
+            />
+            <button type="button" class="button flex-none">GO</button>
+          </form>
+          <ul>
+            <li class="text-xl font-semibold px-4 py-5 border-b border-primary">
+              <a
+                href="#"
+                class="flex justify-between hover:underline hover:text-accent"
+                >Sportblogs<img
+                  src="/static/images/right-angle-arrow.svg"
+                  alt=""
+                  width="30px"
+              /></a>
+            </li>
+            <li class="text-xl font-semibold px-4 py-5 border-b border-primary">
+              <a
+                href="#"
+                class="flex justify-between hover:underline hover:text-accent"
+                >Categories<img
+                  src="/static/images/right-angle-arrow.svg"
+                  alt=""
+                  width="30px"
+              /></a>
+            </li>
+            <li class="text-xl font-semibold px-4 py-5 border-b border-primary">
+              <a
+                href="#"
+                class="flex justify-between hover:underline hover:text-accent"
+                >Discover<img
+                  src="/static/images/right-angle-arrow.svg"
+                  alt=""
+                  width="30px"
+              /></a>
+            </li>
+            <li class="text-xl font-semibold px-4 py-5 border-b border-primary">
+              <a
+                href="#"
+                class="flex justify-between hover:underline hover:text-accent"
+                >Connect<img
+                  src="/static/images/right-angle-arrow.svg"
+                  alt=""
+                  width="30px"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- void -->
+      <section class="py-4"></section>
+      <!-- Top Picks -->
+      <section class="my-8 flex flex-col gap-4">
+        <div class="bg-foreground rounded-sm overflow-hidden">
+          <img
+            src="/static/images/top-one.jpg"
+            alt="Play outdoor sport every just for 15 minutes"
+          />
+          <div class="px-2 py-4">
+            <h1 class="font-bold text-2xl capitalize mb-4">
+              Everyday Outdoor games wins everytimes
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consequatur, necessitatibus.
+            </p>
+          </div>
+        </div>
+        <div class="bg-foreground rounded-sm overflow-hidden">
+          <img
+            src="/static/images/top-two.jpg"
+            alt="Play outdoor sport every just for 15 minutes"
+          />
+          <div class="px-2 py-4">
+            <h1 class="font-bold text-2xl capitalize mb-4">
+              Lorem ipsum dolor sit amet.
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              quisquam.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Categories -->
+      <section class="my-8">
+        <div class="container p-1">
+          <header class="section-header">
+            <h2 class="section-header__text">Category BY</h2>
+            <a href="#" class="section-header__button"
+              ><span class="section-header__button__text">View All</span
+              ><img src="/static/images/arrow-right-circle.svg" width="25px"
+            /></a>
+          </header>
+          <ul class="grid app-auto-fit gap-6 py-4 px-2">
+            <li class="flex flex-col">
+              <img
+                src="/static/images/lm24.jpg"
+                class="max-w-[180px] w-full rounded-full"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                24h Le Mans
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/cricket.jpg"
+                class="max-w-[180px] w-full rounded-full"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Cricket
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/fone.jpg"
+                class="max-w-[180px] w-full rounded-full"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Formula 1
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/football-logo.jpg"
+                class="max-w-[180px] w-full rounded-full"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Football
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/tennis.jpg"
+                class="max-w-[180px] w-full rounded-full"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Tennis
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/chess.jpg"
+                class="max-w-[180px] w-full rounded-full"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Chess
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Read more on the topic you may interested -->
+      <section class="mb-8">
+        <div class="container p-1">
+          <header class="section-header">
+            <h2 class="section-header__text">
+              MORE ON THE TOPIC YOU MAY INTERESTED
+            </h2>
+          </header>
+          <section class="grid gap-8 grid-cols-1 py-4 px-2">
+            <div class="flex gap-4">
+              <a>
+                <img src="/static/images/cycle.jpg" width="320px" alt="" />
+              </a>
+              <h2 class="text-xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h2>
+            </div>
+            <div class="flex gap-4">
+              <a>
+                <img src="/static/images/cycle.jpg" width="320px" alt="" />
+              </a>
+              <h2 class="text-xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h2>
+            </div>
+            <div class="flex gap-4">
+              <a>
+                <img src="/static/images/cycle.jpg" width="320px" alt="" />
+              </a>
+              <h2 class="text-xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h2>
+            </div>
+            <div class="flex gap-4">
+              <a>
+                <img src="/static/images/cycle.jpg" width="320px" alt="" />
+              </a>
+              <h2 class="text-xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h2>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- News letter form 01 -->
+      <section class="mb-8 px-4">
+        <div
+          class="container overflow-hidden rounded-md bg-foreground drop-shadow-md"
+        >
+          <div>
+            <img src="/static/images/american-football-character.svg" alt="" />
+          </div>
+          <div class="p-4">
+            <p class="font-bold text-xs text-accent-dark uppercase">
+              get latest news
+            </p>
+            <h2 class="font-bold text-3xl">Lorem ipsum dolor sit amet.</h2>
+            <p class="text-text my-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+              repellat quos commodi quo impedit? Accusantium, praesentium
+              voluptate. Sit.
+            </p>
+            <form class="flex flex-col gap-4">
+              <input
+                autocomplete="off"
+                type="email"
+                name="email"
+                id="newsletter-email"
+              />
+              <button type="button" class="button">Send</button>
+            </form>
+            <p class="text-sm text-center pt-4 text-text-lite">
+              Your
+              <a
+                href="#"
+                class="underline hover:text-accent active:text-accent-dark"
+                >privacy</a
+              >
+              is important to us
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- More top reads -->
+      <section class="mb-8">
+        <div class="container p-1">
+          <header class="section-header">
+            <h2 class="section-header__text">MORE TOP READS</h2>
+          </header>
+          <div class="py-4 px-2">
+            <ul
+              class="snap-x scroll-smooth overflow-hidden overflow-x-auto grid grid-cols-[200px,_200px,_200px,_200px] gap-6"
+            >
+              <li class="snap-start">
+                <div>
+                  <a href="#" class="cursor-pointer block">
+                    <span class="block">
+                      <img
+                        src="/static/images/cycle.jpg"
+                        alt=""
+                        class="rounded-md max-w-full"
+                      />
+                    </span>
+                    <p class="font-bold text-base leading-tight mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus!
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="snap-start">
+                <div>
+                  <a href="#" class="cursor-pointer block">
+                    <span class="block">
+                      <img
+                        src="/static/images/cycle.jpg"
+                        alt=""
+                        class="rounded-md max-w-full"
+                      />
+                    </span>
+                    <p class="font-bold text-base leading-tight mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus!
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="snap-start">
+                <div>
+                  <a href="#" class="cursor-pointer block">
+                    <span class="block">
+                      <img
+                        src="/static/images/cycle.jpg"
+                        alt=""
+                        class="rounded-md max-w-full"
+                      />
+                    </span>
+                    <p class="font-bold text-base leading-tight mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus!
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="snap-start">
+                <div>
+                  <a href="#" class="cursor-pointer block">
+                    <span class="block">
+                      <img
+                        src="/static/images/cycle.jpg"
+                        alt=""
+                        class="rounded-md max-w-full"
+                      />
+                    </span>
+                    <p class="font-bold text-base leading-tight mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus!
+                    </p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Second banner -->
+      <section class="mb-8">
+        <a href="#" class="block cursor-pointer relative">
+          <img
+            src="/static/images/body-builder.svg"
+            alt=""
+            class="max-w-full"
+          />
+          <span
+            class="absolute bottom-[10%] right-[50%] w-max translate-x-2/4 text-center bg-black/70 rounded-md px-2 py-1"
+          >
+            <p
+              class="capitalize font-bold text-text-secondary text-[clamp(20px,_8vw,_99px)]"
+            >
+              Let's Stay Fit together
+            </p>
+            <p
+              class="text-text-secondary text-[clamp(16px,_5vw,_32px)] text-accent"
+            >
+              Subscribe our youtube channel
+            </p>
+          </span>
+        </a>
+      </section>
+      <!-- Word sports -->
+      <section class="my-8">
+        <div class="container p-1">
+          <header class="section-header">
+            <h2 class="section-header__text">WORLD SPORTS</h2>
+            <a href="#" class="section-header__button"
+              ><span class="section-header__button__text">View All</span
+              ><img src="/static/images/arrow-right-circle.svg" width="25px"
+            /></a>
+          </header>
+          <ul class="grid app-auto-fit gap-6 py-4 px-2">
+            <li class="flex flex-col">
+              <img
+                src="/static/images/lm24.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                24h Le Mans
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/cricket.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Cricket
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/fone.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Formula 1
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/football-logo.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Football
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/tennis.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Tennis
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/chess.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Chess
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Sports gears -->
+      <section class="my-8">
+        <div class="container p-1">
+          <header class="section-header">
+            <h2 class="section-header__text">SPORTS GEARs</h2>
+            <a href="#" class="section-header__button"
+              ><span class="section-header__button__text">View All</span
+              ><img src="/static/images/arrow-right-circle.svg" width="25px"
+            /></a>
+          </header>
+          <ul class="grid app-auto-fit gap-6 py-4 px-2">
+            <li class="flex flex-col">
+              <img
+                src="/static/images/lm24.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                24h Le Mans
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/cricket.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Cricket
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/fone.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Formula 1
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/football-logo.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Football
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/tennis.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Tennis
+              </h3>
+            </li>
+            <li class="flex flex-col">
+              <img
+                src="/static/images/chess.jpg"
+                class="max-w-[180px] w-full rounded-md"
+                alt=""
+              />
+              <h3 class="font-bold text-xl pt-3 text-center leading-none">
+                Chess
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Magazines -->
+      <section class="my-8">
+        <div class="container p-1">
+          <header class="section-header">
+            <h2 class="section-header__text">MAGAZINES</h2>
+            <a href="#" class="section-header__button"
+              ><span class="section-header__button__text">View All</span
+              ><img src="/static/images/arrow-right-circle.svg" width="25px"
+            /></a>
+          </header>
+          <ul class="flex justify-center flex-wrap gap-6 py-4 px-2">
+            <li class="max-[360px]">
+              <a href="#">
+                <img
+                  src="/static/images/butt-shape.jpg"
+                  class="max-w-full"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="max-[360px]">
+              <a href="#">
+                <img
+                  src="/static/images/computer-guy.jpg"
+                  class="max-w-full"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="max-[360px]">
+              <a href="#">
+                <img
+                  src="/static/images/stress.jpg"
+                  class="max-w-full"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="max-[360px]">
+              <a href="#">
+                <img src="/static/images/diet.jpg" class="max-w-full" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- News latter form 02 -->
+      <section class="my-8">
+        <div class="relative">
+          <div class="absolute">
+            <img src="/static/images/american-football-character.svg" alt="" />
+          </div>
+          <div class="px-4 pt-[120px]">
+            <div
+              class="container overflow-hidden rounded-md bg-foreground drop-shadow-md"
+            >
+              <div class="p-4">
+                <h2 class="font-bold text-2xl">Sportsline</h2>
+                <h3 class="font-semibold text-3xl my-2">
+                  Lorem ipsum dolor sit amet.
+                </h3>
+                <p class="text-text my-2">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Pariatur repellat quos commodi quo impedit? Accusantium,
+                  praesentium voluptate. Sit.
+                </p>
+                <ul class="list-disc my-2">
+                  <li class="ml-4 mb-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Obcaecati, cupiditate architecto! Rem fuga dolores quis vero
+                    sapiente laborum, atque soluta.
+                  </li>
+                  <li class="ml-4 mb-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Obcaecati, cupiditate architecto!
+                  </li>
+                  <li class="ml-4 mb-2">
+                    Lorem ipsum dolor, sit Obcaecati, cupiditate architecto! Rem
+                    fuga dolores quis vero sapiente laborum, atque soluta.
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  class="text-base uppercase text-accent hover:text-accent active:text-accent-dark"
+                  >What our daily routine
+                  <span
+                    ><img src="/static/images/arrow-right.svg" alt="" /></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sponsor posts -->
+      <section class="mb-8">
+        <div class="container p-1">
+          <header class="section-header">
+            <h2 class="section-header__text">
+              read awesome article of our sponsors
+            </h2>
+          </header>
+          <div class="py-4 px-2">
+            <ul
+              class="snap-x scroll-smooth pb-2 overflow-hidden overflow-x-auto grid grid-cols-[200px,_200px,_200px,_200px] gap-6"
+            >
+              <li class="snap-start">
+                <div>
+                  <a href="#" class="cursor-pointer block">
+                    <span class="block">
+                      <img
+                        src="/static/images/cycle.jpg"
+                        alt=""
+                        class="rounded-md max-w-full"
+                      />
+                    </span>
+                    <p class="font-bold text-base leading-tight mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus!
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="snap-start">
+                <div>
+                  <a href="#" class="cursor-pointer block">
+                    <span class="block">
+                      <img
+                        src="/static/images/cycle.jpg"
+                        alt=""
+                        class="rounded-md max-w-full"
+                      />
+                    </span>
+                    <p class="font-bold text-base leading-tight mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus!
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="snap-start">
+                <div>
+                  <a href="#" class="cursor-pointer block">
+                    <span class="block">
+                      <img
+                        src="/static/images/cycle.jpg"
+                        alt=""
+                        class="rounded-md max-w-full"
+                      />
+                    </span>
+                    <p class="font-bold text-base leading-tight mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus!
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="snap-start">
+                <div>
+                  <a href="#" class="cursor-pointer block">
+                    <span class="block">
+                      <img
+                        src="/static/images/cycle.jpg"
+                        alt=""
+                        class="rounded-md max-w-full"
+                      />
+                    </span>
+                    <p class="font-bold text-base leading-tight mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus!
+                    </p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="px-2 py-10 bg-footer">
+        <div class="mb-8 flex flex-col justify-center gap-6 items-center">
+          <h1 class="font-bold text-3xl">Sportblog</h1>
+          <div class="flex justify-center gap-2">
+            <img
+              width="30px"
+              height="30px"
+              src="/static/images/facebook.svg"
+              alt=""
+            />
+            <img
+              width="30px"
+              height="30px"
+              src="/static/images/instagram.svg"
+              alt=""
+            />
+            <img
+              width="30px"
+              height="30px"
+              src="/static/images/linkedin.svg"
+              alt=""
+            />
+            <img
+              width="30px"
+              height="30px"
+              src="/static/images/pinterest.svg"
+              alt=""
+            />
+            <img
+              width="30px"
+              height="30px"
+              src="/static/images/reddit.svg"
+              alt=""
+            />
+            <img
+              width="30px"
+              height="30px"
+              src="/static/images/tumblr.svg"
+              alt=""
+            />
+            <img
+              width="30px"
+              height="30px"
+              src="/static/images/twitter.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-8">
+          <div class="flex flex-col justify-center items-center gap-4">
+            <h2 class="font-bold text-2xl text-center">
+              Get our fitness newsletter
+            </h2>
+            <p class="text-text text-center">
+              Filter out the noise and nurture your inbox with health and
+              wellness advice that’s inclusive and rooted in medical expertise.
+            </p>
+            <div class="w-full">
+              <form class="flex flex-col gap-2">
+                <input
+                  autocomplete="off"
+                  type="email"
+                  name="email"
+                  id="newsletter-email"
+                />
+                <button type="button" class="button">Send</button>
+              </form>
+              <p class="text-sm text-center text-text-lite pt-2">
+                Your
+                <a
+                  href="#"
+                  class="underline hover:text-accent active:text-accent-dark"
+                  >privacy</a
+                >
+                is important to us
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <ul class="grid grid-cols-2 gap-4 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="hover:underline hover:text-accent font-medium"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:underline hover:text-accent font-medium"
+                  >Contact us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:underline hover:text-accent font-medium"
+                  >Career</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:underline hover:text-accent font-medium"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:underline hover:text-accent font-medium"
+                  >Privacy Settings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:underline hover:text-accent font-medium"
+                  >Advertising Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:underline hover:text-accent font-medium"
+                  >Fitness Support</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:underline hover:text-accent font-medium"
+                  >Content Integrity</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:underline hover:text-accent font-medium"
+                  >Newsletter</a
+                >
+              </li>
+            </ul>
+            <p class="text-text-lite text-justify text-sm">
+              © 20022-2022 Sportblog Media a Red Ventures Company. All rights
+              reserved. Our website services, content, and products are for
+              informational purposes only. Sportblog Media does not provide
+              medical advice, diagnosis, or treatment. See additional
+              information.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </footer>
+  </body>
+</html>

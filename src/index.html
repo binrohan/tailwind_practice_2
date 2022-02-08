@@ -9,8 +9,11 @@
   <body class="bg-background">
     <!-- navbar -->
     <nav class="bg-primary fixed top-0 w-full z-40">
-      <div class="container p-1 flex justify-between items-center">
-        <div class="flex flex-col gap-1 transition-all relative" id="ham">
+      <div class="container flex justify-between items-center">
+        <div
+          class="flex flex-col gap-1 transition-all relative cursor-pointer"
+          id="ham"
+        >
           <span
             class="w-6 h-1 bg-text-secondary block rounded-md ham__arms"
           ></span>
@@ -98,43 +101,45 @@
     </nav>
     <main>
       <!-- void -->
-      <section class="py-4"></section>
+      <section class="py-4 container"></section>
       <!-- Top Picks -->
-      <section class="my-8 flex flex-col gap-4">
-        <div class="bg-foreground rounded-sm overflow-hidden">
-          <img
-            src="/static/images/top-one.jpg"
-            alt="Play outdoor sport every just for 15 minutes"
-          />
-          <div class="px-2 py-4">
-            <h1 class="font-bold text-2xl capitalize mb-4">
-              Everyday Outdoor games wins everytimes
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consequatur, necessitatibus.
-            </p>
+      <section class="my-8">
+        <div class="flex flex-col gap-4 md:container">
+          <div class="bg-foreground rounded-sm overflow-hidden">
+            <img
+              src="/static/images/top-one.jpg"
+              alt="Play outdoor sport every just for 15 minutes"
+            />
+            <div class="px-2 py-4">
+              <h1 class="font-bold text-2xl capitalize mb-4">
+                Everyday Outdoor games wins everytimes
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequatur, necessitatibus.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="bg-foreground rounded-sm overflow-hidden">
-          <img
-            src="/static/images/top-two.jpg"
-            alt="Play outdoor sport every just for 15 minutes"
-          />
-          <div class="px-2 py-4">
-            <h1 class="font-bold text-2xl capitalize mb-4">
-              Lorem ipsum dolor sit amet.
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-              quisquam.
-            </p>
+          <div class="bg-foreground rounded-sm overflow-hidden">
+            <img
+              src="/static/images/top-two.jpg"
+              alt="Play outdoor sport every just for 15 minutes"
+            />
+            <div class="px-2 py-4">
+              <h1 class="font-bold text-2xl capitalize mb-4">
+                Lorem ipsum dolor sit amet.
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, quisquam.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <!-- Categories -->
       <section class="my-8">
-        <div class="container p-1">
+        <div class="container">
           <header class="section-header">
             <h2 class="section-header__text">Category BY</h2>
             <a href="#" class="section-header__button"
@@ -142,11 +147,11 @@
               ><img src="/static/images/arrow-right-circle.svg" width="25px"
             /></a>
           </header>
-          <ul class="grid app-auto-fit gap-6 py-4 px-2">
+          <ul class="grid grid-cols-2 gap-10 py-4 px-2">
             <li class="flex flex-col">
               <img
                 src="/static/images/lm24.jpg"
-                class="max-w-[180px] w-full rounded-full"
+                class="max-w-full w-full rounded-full"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -156,7 +161,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/cricket.jpg"
-                class="max-w-[180px] w-full rounded-full"
+                class="max-w-full w-full rounded-full"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -166,7 +171,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/fone.jpg"
-                class="max-w-[180px] w-full rounded-full"
+                class="max-w-full w-full rounded-full"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -176,7 +181,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/football-logo.jpg"
-                class="max-w-[180px] w-full rounded-full"
+                class="max-w-full w-full rounded-full"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -186,7 +191,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/tennis.jpg"
-                class="max-w-[180px] w-full rounded-full"
+                class="max-w-full w-full rounded-full"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -196,7 +201,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/chess.jpg"
-                class="max-w-[180px] w-full rounded-full"
+                class="max-w-full w-full rounded-full"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -208,7 +213,7 @@
       </section>
       <!-- Read more on the topic you may interested -->
       <section class="mb-8">
-        <div class="container p-1">
+        <div class="container">
           <header class="section-header">
             <h2 class="section-header__text">
               MORE ON THE TOPIC YOU MAY INTERESTED
@@ -217,7 +222,11 @@
           <section class="grid gap-8 grid-cols-1 py-4 px-2">
             <div class="flex gap-4">
               <a>
-                <img src="/static/images/cycle.jpg" width="320px" alt="" />
+                <img
+                  src="/static/images/cycle.jpg"
+                  class="max-w-[145px]"
+                  alt=""
+                />
               </a>
               <h2 class="text-xl font-semibold">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -225,7 +234,11 @@
             </div>
             <div class="flex gap-4">
               <a>
-                <img src="/static/images/cycle.jpg" width="320px" alt="" />
+                <img
+                  src="/static/images/cycle.jpg"
+                  class="max-w-[145px]"
+                  alt=""
+                />
               </a>
               <h2 class="text-xl font-semibold">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -233,7 +246,11 @@
             </div>
             <div class="flex gap-4">
               <a>
-                <img src="/static/images/cycle.jpg" width="320px" alt="" />
+                <img
+                  src="/static/images/cycle.jpg"
+                  class="max-w-[145px]"
+                  alt=""
+                />
               </a>
               <h2 class="text-xl font-semibold">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -241,7 +258,11 @@
             </div>
             <div class="flex gap-4">
               <a>
-                <img src="/static/images/cycle.jpg" width="320px" alt="" />
+                <img
+                  src="/static/images/cycle.jpg"
+                  class="max-w-[145px]"
+                  alt=""
+                />
               </a>
               <h2 class="text-xl font-semibold">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -252,47 +273,50 @@
       </section>
       <!-- News letter form 01 -->
       <section class="mb-8 px-4">
-        <div
-          class="container overflow-hidden rounded-md bg-foreground drop-shadow-md"
-        >
-          <div>
-            <img src="/static/images/american-football-character.svg" alt="" />
-          </div>
-          <div class="p-4">
-            <p class="font-bold text-xs text-accent-dark uppercase">
-              get latest news
-            </p>
-            <h2 class="font-bold text-3xl">Lorem ipsum dolor sit amet.</h2>
-            <p class="text-text my-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
-              repellat quos commodi quo impedit? Accusantium, praesentium
-              voluptate. Sit.
-            </p>
-            <form class="flex flex-col gap-4">
-              <input
-                autocomplete="off"
-                type="email"
-                name="email"
-                id="newsletter-email"
+        <div class="container">
+          <div class="overflow-hidden rounded-md bg-foreground drop-shadow-md">
+            <div>
+              <img
+                src="/static/images/american-football-character.svg"
+                alt=""
               />
-              <button type="button" class="button">Send</button>
-            </form>
-            <p class="text-sm text-center pt-4 text-text-lite">
-              Your
-              <a
-                href="#"
-                class="underline hover:text-accent active:text-accent-dark"
-                >privacy</a
-              >
-              is important to us
-            </p>
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xs text-accent-dark uppercase">
+                get latest news
+              </p>
+              <h2 class="font-bold text-3xl">Lorem ipsum dolor sit amet.</h2>
+              <p class="text-text my-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Pariatur repellat quos commodi quo impedit? Accusantium,
+                praesentium voluptate. Sit.
+              </p>
+              <form class="flex flex-col gap-4 max-w-[400px] mx-auto">
+                <input
+                  autocomplete="off"
+                  type="email"
+                  name="email"
+                  id="newsletter-email"
+                />
+                <button type="button" class="button">Send</button>
+              </form>
+              <p class="text-sm text-center pt-4 text-text-lite">
+                Your
+                <a
+                  href="#"
+                  class="underline hover:text-accent active:text-accent-dark"
+                  >privacy</a
+                >
+                is important to us
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <!-- More top reads -->
       <section class="mb-8">
-        <div class="container p-1">
-          <header class="section-header">
+        <div>
+          <header class="section-header container">
             <h2 class="section-header__text">MORE TOP READS</h2>
           </header>
           <div class="py-4 px-2">
@@ -373,31 +397,33 @@
       </section>
       <!-- Second banner -->
       <section class="mb-8">
-        <a href="#" class="block cursor-pointer relative">
-          <img
-            src="/static/images/body-builder.svg"
-            alt=""
-            class="max-w-full"
-          />
-          <span
-            class="absolute bottom-[10%] right-[50%] w-max translate-x-2/4 text-center bg-black/70 rounded-md px-2 py-1"
-          >
-            <p
-              class="capitalize font-bold text-text-secondary text-[clamp(20px,_8vw,_99px)]"
+        <div class="container">
+          <a href="#" class="block cursor-pointer relative">
+            <img
+              src="/static/images/body-builder.svg"
+              alt=""
+              class="max-w-full"
+            />
+            <span
+              class="absolute bottom-[10%] right-[50%] w-max translate-x-2/4 text-center bg-black/70 rounded-md px-2 py-1"
             >
-              Let's Stay Fit together
-            </p>
-            <p
-              class="text-text-secondary text-[clamp(16px,_5vw,_32px)] text-accent"
-            >
-              Subscribe our youtube channel
-            </p>
-          </span>
-        </a>
+              <p
+                class="capitalize font-bold text-text-secondary text-[clamp(20px,_8vw,_60px)]"
+              >
+                Let's Stay Fit together
+              </p>
+              <p
+                class="text-text-secondary text-[clamp(16px,_5vw,_32px)] text-accent"
+              >
+                Subscribe our youtube channel
+              </p>
+            </span>
+          </a>
+        </div>
       </section>
       <!-- Word sports -->
       <section class="my-8">
-        <div class="container p-1">
+        <div class="container">
           <header class="section-header">
             <h2 class="section-header__text">WORLD SPORTS</h2>
             <a href="#" class="section-header__button"
@@ -405,11 +431,11 @@
               ><img src="/static/images/arrow-right-circle.svg" width="25px"
             /></a>
           </header>
-          <ul class="grid app-auto-fit gap-6 py-4 px-2">
+          <ul class="grid grid-cols-2 gap-10 py-4 px-2">
             <li class="flex flex-col">
               <img
                 src="/static/images/lm24.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -419,7 +445,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/cricket.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -429,7 +455,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/fone.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -439,7 +465,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/football-logo.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -449,7 +475,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/tennis.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -459,7 +485,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/chess.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -471,7 +497,7 @@
       </section>
       <!-- Sports gears -->
       <section class="my-8">
-        <div class="container p-1">
+        <div class="container">
           <header class="section-header">
             <h2 class="section-header__text">SPORTS GEARs</h2>
             <a href="#" class="section-header__button"
@@ -479,11 +505,11 @@
               ><img src="/static/images/arrow-right-circle.svg" width="25px"
             /></a>
           </header>
-          <ul class="grid app-auto-fit gap-6 py-4 px-2">
+          <ul class="grid grid-cols-2 gap-10 py-4 px-2">
             <li class="flex flex-col">
               <img
                 src="/static/images/lm24.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -493,7 +519,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/cricket.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -503,7 +529,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/fone.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -513,7 +539,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/football-logo.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -523,7 +549,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/tennis.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -533,7 +559,7 @@
             <li class="flex flex-col">
               <img
                 src="/static/images/chess.jpg"
-                class="max-w-[180px] w-full rounded-md"
+                class="max-w-full w-full rounded-md"
                 alt=""
               />
               <h3 class="font-bold text-xl pt-3 text-center leading-none">
@@ -545,7 +571,7 @@
       </section>
       <!-- Magazines -->
       <section class="my-8">
-        <div class="container p-1">
+        <div class="container">
           <header class="section-header">
             <h2 class="section-header__text">MAGAZINES</h2>
             <a href="#" class="section-header__button"
@@ -554,48 +580,41 @@
             /></a>
           </header>
           <ul class="flex justify-center flex-wrap gap-6 py-4 px-2">
-            <li class="max-[360px]">
-              <a href="#">
+            <li class="flex-full">
+              <a href="#" class="block">
                 <img
                   src="/static/images/butt-shape.jpg"
-                  class="max-w-full"
+                  class="w-full"
                   alt=""
                 />
               </a>
             </li>
-            <li class="max-[360px]">
+            <li class="flex-full">
               <a href="#">
                 <img
                   src="/static/images/computer-guy.jpg"
-                  class="max-w-full"
+                  class="w-full"
                   alt=""
                 />
               </a>
             </li>
-            <li class="max-[360px]">
+            <li class="flex-full">
               <a href="#">
-                <img
-                  src="/static/images/stress.jpg"
-                  class="max-w-full"
-                  alt=""
-                />
+                <img src="/static/images/stress.jpg" class="w-full" alt="" />
               </a>
             </li>
-            <li class="max-[360px]">
+            <li class="flex-full">
               <a href="#">
-                <img src="/static/images/diet.jpg" class="max-w-full" alt="" />
+                <img src="/static/images/diet.jpg" class="w-full" alt="" />
               </a>
             </li>
           </ul>
         </div>
       </section>
       <!-- News latter form 02 -->
-      <section class="my-8">
-        <div class="relative">
-          <div class="absolute">
-            <img src="/static/images/american-football-character.svg" alt="" />
-          </div>
-          <div class="px-4 pt-[120px]">
+      <section class="my-8 bg-gradient-to-r from-cyan-500 to-blue-500  bg-[length:100%_400px] bg-no-repeat">
+        <div class="bg-[url('/static/images/banner-three.png')] bg-[length:600px_400px] bg-no-repeat bg-top-center relative">
+          <div class="px-4 pt-[340px]">
             <div
               class="container overflow-hidden rounded-md bg-foreground drop-shadow-md"
             >
@@ -626,7 +645,7 @@
                 </ul>
                 <a
                   href="#"
-                  class="text-base uppercase text-accent hover:text-accent active:text-accent-dark"
+                  class="text-base uppercase text-accent hover:text-accent active:text-accent-dark flex items-center gap-2 flex-wrap"
                   >What our daily routine
                   <span
                     ><img src="/static/images/arrow-right.svg" alt="" /></span
@@ -638,8 +657,8 @@
       </section>
       <!-- Sponsor posts -->
       <section class="mb-8">
-        <div class="container p-1">
-          <header class="section-header">
+        <div class="">
+          <header class="section-header container">
             <h2 class="section-header__text">
               read awesome article of our sponsors
             </h2>
@@ -722,161 +741,165 @@
       </section>
     </main>
     <footer>
-      <div class="px-2 py-10 bg-footer">
-        <div class="mb-8 flex flex-col justify-center gap-6 items-center">
-          <h1 class="font-bold text-3xl">Sportblog</h1>
-          <div class="flex justify-center gap-2">
-            <img
-              width="30px"
-              height="30px"
-              src="/static/images/facebook.svg"
-              alt=""
-            />
-            <img
-              width="30px"
-              height="30px"
-              src="/static/images/instagram.svg"
-              alt=""
-            />
-            <img
-              width="30px"
-              height="30px"
-              src="/static/images/linkedin.svg"
-              alt=""
-            />
-            <img
-              width="30px"
-              height="30px"
-              src="/static/images/pinterest.svg"
-              alt=""
-            />
-            <img
-              width="30px"
-              height="30px"
-              src="/static/images/reddit.svg"
-              alt=""
-            />
-            <img
-              width="30px"
-              height="30px"
-              src="/static/images/tumblr.svg"
-              alt=""
-            />
-            <img
-              width="30px"
-              height="30px"
-              src="/static/images/twitter.svg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="flex flex-wrap gap-8">
-          <div class="flex flex-col justify-center items-center gap-4">
-            <h2 class="font-bold text-2xl text-center">
-              Get our fitness newsletter
-            </h2>
-            <p class="text-text text-center">
-              Filter out the noise and nurture your inbox with health and
-              wellness advice that’s inclusive and rooted in medical expertise.
-            </p>
-            <div class="w-full">
-              <form class="flex flex-col gap-2">
-                <input
-                  autocomplete="off"
-                  type="email"
-                  name="email"
-                  id="newsletter-email"
+      <div class="bg-footer">
+        <div class="container">
+          <div class="py-10">
+            <div class="mb-8 flex flex-col justify-center gap-6 items-center">
+              <h1 class="font-bold text-3xl">Sportblog</h1>
+              <div class="flex justify-center gap-2">
+                <img
+                  width="30px"
+                  height="30px"
+                  src="/static/images/facebook.svg"
+                  alt=""
                 />
-                <button type="button" class="button">Send</button>
-              </form>
-              <p class="text-sm text-center text-text-lite pt-2">
-                Your
-                <a
-                  href="#"
-                  class="underline hover:text-accent active:text-accent-dark"
-                  >privacy</a
-                >
-                is important to us
-              </p>
+                <img
+                  width="30px"
+                  height="30px"
+                  src="/static/images/instagram.svg"
+                  alt=""
+                />
+                <img
+                  width="30px"
+                  height="30px"
+                  src="/static/images/linkedin.svg"
+                  alt=""
+                />
+                <img
+                  width="30px"
+                  height="30px"
+                  src="/static/images/pinterest.svg"
+                  alt=""
+                />
+                <img
+                  width="30px"
+                  height="30px"
+                  src="/static/images/reddit.svg"
+                  alt=""
+                />
+                <img
+                  width="30px"
+                  height="30px"
+                  src="/static/images/tumblr.svg"
+                  alt=""
+                />
+                <img
+                  width="30px"
+                  height="30px"
+                  src="/static/images/twitter.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-8">
+              <div class="flex flex-col justify-center items-center gap-4">
+                <h2 class="font-bold text-2xl text-center">
+                  Get our fitness newsletter
+                </h2>
+                <p class="text-text text-center">
+                  Filter out the noise and nurture your inbox with health and
+                  wellness advice that’s inclusive and rooted in medical expertise.
+                </p>
+                <div class="w-full">
+                  <form class="flex flex-col gap-2 max-w-[400px] mx-auto">
+                    <input
+                      autocomplete="off"
+                      type="email"
+                      name="email"
+                      id="newsletter-email"
+                    />
+                    <button type="button" class="button">Send</button>
+                  </form>
+                  <p class="text-sm text-center text-text-lite pt-2">
+                    Your
+                    <a
+                      href="#"
+                      class="underline hover:text-accent active:text-accent-dark"
+                      >privacy</a
+                    >
+                    is important to us
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-wrap justify-around gap-4 ">
+                <ul class="grid grid-cols-2 gap-4 text-sm">
+                  <li>
+                    <a
+                      href="#"
+                      class="hover:underline hover:text-accent font-medium"
+                      >About us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="hover:underline hover:text-accent font-medium"
+                      >Contact us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="hover:underline hover:text-accent font-medium"
+                      >Career</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="hover:underline hover:text-accent font-medium"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="hover:underline hover:text-accent font-medium"
+                      >Privacy Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="hover:underline hover:text-accent font-medium"
+                      >Advertising Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="hover:underline hover:text-accent font-medium"
+                      >Fitness Support</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="hover:underline hover:text-accent font-medium"
+                      >Content Integrity</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="hover:underline hover:text-accent font-medium"
+                      >Newsletter</a
+                    >
+                  </li>
+                </ul>
+                <p class="text-text-lite text-justify text-sm">
+                  © 20022-2022 Sportblog Media a Red Ventures Company. All rights
+                  reserved. Our website services, content, and products are for
+                  informational purposes only. Sportblog Media does not provide
+                  medical advice, diagnosis, or treatment. See additional
+                  information.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="flex flex-wrap gap-4">
-            <ul class="grid grid-cols-2 gap-4 text-sm">
-              <li>
-                <a
-                  href="#"
-                  class="hover:underline hover:text-accent font-medium"
-                  >About us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:underline hover:text-accent font-medium"
-                  >Contact us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:underline hover:text-accent font-medium"
-                  >Career</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:underline hover:text-accent font-medium"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:underline hover:text-accent font-medium"
-                  >Privacy Settings</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:underline hover:text-accent font-medium"
-                  >Advertising Policy</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:underline hover:text-accent font-medium"
-                  >Fitness Support</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:underline hover:text-accent font-medium"
-                  >Content Integrity</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:underline hover:text-accent font-medium"
-                  >Newsletter</a
-                >
-              </li>
-            </ul>
-            <p class="text-text-lite text-justify text-sm">
-              © 20022-2022 Sportblog Media a Red Ventures Company. All rights
-              reserved. Our website services, content, and products are for
-              informational purposes only. Sportblog Media does not provide
-              medical advice, diagnosis, or treatment. See additional
-              information.
-            </p>
-          </div>
+          <div></div>
         </div>
       </div>
-      <div></div>
     </footer>
   </body>
 </html>

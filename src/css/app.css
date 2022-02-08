@@ -23,7 +23,11 @@
 
 /* APP CSS */
 .app-auto-fit{
-    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+}
+.bg-top-center{
+    background-position-x: center; 
+    background-position-y: top;
 }
 /* Utilities */
 .scroll-lock{

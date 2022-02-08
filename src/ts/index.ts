@@ -30,6 +30,7 @@ import '../images/svg/reddit.svg';
 import '../images/svg/tumblr.svg';
 import '../images/svg/twitter.svg';
 import '../images/svg/right-angle-arrow.svg';
+import '../images/jpeg/banner-three.png';
 
 import ham from './modules/ham';
 

@@ -8,10 +8,10 @@
   </head>
   <body class="bg-background">
     <!-- navbar -->
-    <nav class="bg-primary fixed top-0 w-full z-40">
+    <nav class="bg-primary fixed top-0 w-full z-40 md:h-[70px] md:flex justify-center">
       <div class="container flex justify-between items-center">
         <div
-          class="flex flex-col gap-1 transition-all relative cursor-pointer"
+          class="flex flex-col gap-1 transition-all relative cursor-pointer scale-125"
           id="ham"
         >
           <span
@@ -31,10 +31,11 @@
           ></span>
         </div>
         <div>
-          <h1 class="text-text-secondary text-xl font-bold">Sportblog</h1>
+          <h1 class="text-text-secondary text-xl md:text-3xl font-bold">Sportblog</h1>
         </div>
         <div>
-          <img src="/static/images/subscribe.svg" alt="" class="w-8" />
+          <a href="#" class="cursor-pointer text-text-secondary uppercase font-semibold">Subscribe</a>
+          <img src="/static/images/subscribe.svg" alt="" class="w-8 md:hidden"/>
         </div>
       </div>
     </nav>
@@ -44,7 +45,7 @@
         class="max-w-[480px] w-full h-full bg-footer overflow-auto drop-shadow"
       >
         <div class="w-full max-w-[360px] mx-auto">
-          <form class="flex px-4 pb-5 pt-14 border-b border-primary">
+          <form class="flex px-4 pb-5 pt-24 border-b border-primary">
             <input
               type="text"
               name="search"
@@ -101,26 +102,28 @@
     </nav>
     <main>
       <!-- void -->
-      <section class="py-4 container"></section>
+      <!-- <section class="py-4 container"></section> -->
       <!-- Top Picks -->
-      <section class="my-8">
-        <div class="flex flex-col gap-4 md:container">
-          <div class="bg-foreground rounded-sm overflow-hidden">
+      <section class="my-8 pt-8 md:pt-16">
+        <div class="flex flex-col gap-16 md:container">
+          <div class="bg-foreground overflow-hidden relative rounded-md">
             <img
               src="/static/images/top-one.jpg"
               alt="Play outdoor sport every just for 15 minutes"
             />
-            <div class="px-2 py-4">
-              <h1 class="font-bold text-2xl capitalize mb-4">
-                Everyday Outdoor games wins everytimes
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Consequatur, necessitatibus.
-              </p>
+            <div class="p-5 md:absolute z-10 left-0 bottom-0 md:w-full">
+              <div class="bg-secondary px-2 py-4 rounded-md md:text-center">
+                <h1 class="font-bold text-2xl capitalize mb-4">
+                  Everyday Outdoor games wins everytimes
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequatur, necessitatibus.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="bg-foreground rounded-sm overflow-hidden">
+          <div class="bg-foreground rounded-md overflow-hidden">
             <img
               src="/static/images/top-two.jpg"
               alt="Play outdoor sport every just for 15 minutes"
@@ -147,7 +150,7 @@
               ><img src="/static/images/arrow-right-circle.svg" width="25px"
             /></a>
           </header>
-          <ul class="grid grid-cols-2 gap-10 py-4 px-2">
+          <ul class="grid grid-cols-2 gap-10 py-8 px-2 md:px-0 md:grid-cols-5">
             <li class="flex flex-col">
               <img
                 src="/static/images/lm24.jpg"
@@ -198,16 +201,6 @@
                 Tennis
               </h3>
             </li>
-            <li class="flex flex-col">
-              <img
-                src="/static/images/chess.jpg"
-                class="max-w-full w-full rounded-full"
-                alt=""
-              />
-              <h3 class="font-bold text-xl pt-3 text-center leading-none">
-                Chess
-              </h3>
-            </li>
           </ul>
         </div>
       </section>
@@ -219,8 +212,8 @@
               MORE ON THE TOPIC YOU MAY INTERESTED
             </h2>
           </header>
-          <section class="grid gap-8 grid-cols-1 py-4 px-2">
-            <div class="flex gap-4">
+          <section class="grid gap-8 md:gap-16 grid-cols-1 py-8 px-2 md:px-0">
+            <div class="flex gap-4 md:gap-8">
               <a>
                 <img
                   src="/static/images/cycle.jpg"
@@ -228,11 +221,17 @@
                   alt=""
                 />
               </a>
-              <h2 class="text-xl font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h2>
+              <div>
+                <h2 class="text-xl font-semibold mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="hidden md:block">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minus repellat culpa incidunt sit iure voluptatibus!
+                </p>
+              </div>
             </div>
-            <div class="flex gap-4">
+            <div class="flex gap-4 md:gap-8">
               <a>
                 <img
                   src="/static/images/cycle.jpg"
@@ -240,11 +239,17 @@
                   alt=""
                 />
               </a>
-              <h2 class="text-xl font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h2>
+              <div>
+                <h2 class="text-xl font-semibold mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="hidden md:block">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minus repellat culpa incidunt sit iure voluptatibus!
+                </p>
+              </div>
             </div>
-            <div class="flex gap-4">
+            <div class="flex gap-4 md:gap-8">
               <a>
                 <img
                   src="/static/images/cycle.jpg"
@@ -252,11 +257,17 @@
                   alt=""
                 />
               </a>
-              <h2 class="text-xl font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h2>
+              <div>
+                <h2 class="text-xl font-semibold mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="hidden md:block">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minus repellat culpa incidunt sit iure voluptatibus!
+                </p>
+              </div>
             </div>
-            <div class="flex gap-4">
+            <div class="flex gap-4 md:gap-8">
               <a>
                 <img
                   src="/static/images/cycle.jpg"
@@ -264,9 +275,15 @@
                   alt=""
                 />
               </a>
-              <h2 class="text-xl font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h2>
+              <div>
+                <h2 class="text-xl font-semibold mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="hidden md:block">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minus repellat culpa incidunt sit iure voluptatibus!
+                </p>
+              </div>
             </div>
           </section>
         </div>
@@ -274,14 +291,14 @@
       <!-- News letter form 01 -->
       <section class="mb-8 px-4">
         <div class="container">
-          <div class="overflow-hidden rounded-md bg-foreground drop-shadow-md">
-            <div>
-              <img
+          <div class="overflow-hidden rounded-md bg-foreground drop-shadow-md md:flex">
+            <div class="flex-auto bg-[url('/static/images/american-football-character.svg')] bg-cover bg-no-repeat bg-center sm:min-h-[400px]">
+              <!-- <img
                 src="/static/images/american-football-character.svg"
                 alt=""
-              />
+              /> -->
             </div>
-            <div class="p-4">
+            <div class="p-12 flex-1">
               <p class="font-bold text-xs text-accent-dark uppercase">
                 get latest news
               </p>
@@ -291,7 +308,7 @@
                 Pariatur repellat quos commodi quo impedit? Accusantium,
                 praesentium voluptate. Sit.
               </p>
-              <form class="flex flex-col gap-4 max-w-[400px] mx-auto">
+              <form class="flex flex-col gap-4 max-w-[400px] min-w-[300px] mx-auto">
                 <input
                   autocomplete="off"
                   type="email"
@@ -316,12 +333,14 @@
       <!-- More top reads -->
       <section class="mb-8">
         <div>
-          <header class="section-header container">
-            <h2 class="section-header__text">MORE TOP READS</h2>
-          </header>
-          <div class="py-4 px-2">
+          <div class="container">
+            <header class="section-header">
+              <h2 class="section-header__text">MORE TOP READS</h2>
+            </header>
+          </div>
+          <div class="py-8 px-2 md:container">
             <ul
-              class="snap-x scroll-smooth overflow-hidden overflow-x-auto grid grid-cols-[200px,_200px,_200px,_200px] gap-6"
+              class="snap-x scroll-smooth overflow-hidden overflow-x-auto grid grid-cols-[200px,_200px,_200px,_200px] gap-6 md:grid-cols-4"
             >
               <li class="snap-start">
                 <div>
@@ -431,7 +450,7 @@
               ><img src="/static/images/arrow-right-circle.svg" width="25px"
             /></a>
           </header>
-          <ul class="grid grid-cols-2 gap-10 py-4 px-2">
+          <ul class="grid grid-cols-2 md:grid-cols-5 gap-10 py-8">
             <li class="flex flex-col">
               <img
                 src="/static/images/lm24.jpg"
@@ -482,16 +501,6 @@
                 Tennis
               </h3>
             </li>
-            <li class="flex flex-col">
-              <img
-                src="/static/images/chess.jpg"
-                class="max-w-full w-full rounded-md"
-                alt=""
-              />
-              <h3 class="font-bold text-xl pt-3 text-center leading-none">
-                Chess
-              </h3>
-            </li>
           </ul>
         </div>
       </section>
@@ -505,7 +514,7 @@
               ><img src="/static/images/arrow-right-circle.svg" width="25px"
             /></a>
           </header>
-          <ul class="grid grid-cols-2 gap-10 py-4 px-2">
+          <ul class="grid grid-cols-2 md:grid-cols-5 gap-10 py-8">
             <li class="flex flex-col">
               <img
                 src="/static/images/lm24.jpg"
@@ -556,16 +565,6 @@
                 Tennis
               </h3>
             </li>
-            <li class="flex flex-col">
-              <img
-                src="/static/images/chess.jpg"
-                class="max-w-full w-full rounded-md"
-                alt=""
-              />
-              <h3 class="font-bold text-xl pt-3 text-center leading-none">
-                Chess
-              </h3>
-            </li>
           </ul>
         </div>
       </section>
@@ -579,7 +578,7 @@
               ><img src="/static/images/arrow-right-circle.svg" width="25px"
             /></a>
           </header>
-          <ul class="flex justify-center flex-wrap gap-6 py-4 px-2">
+          <ul class="grid md:grid-cols-2 gap-8 py-8 px-2 md:px-0">
             <li class="flex-full">
               <a href="#" class="block">
                 <img
@@ -612,11 +611,15 @@
         </div>
       </section>
       <!-- News latter form 02 -->
-      <section class="my-8 bg-gradient-to-r from-cyan-500 to-blue-500  bg-[length:100%_400px] bg-no-repeat">
-        <div class="bg-[url('/static/images/banner-three.png')] bg-[length:600px_400px] bg-no-repeat bg-top-center relative">
-          <div class="px-4 pt-[340px]">
+      <section
+        class="my-8 bg-gradient-to-r from-cyan-500 to-blue-500 bg-[length:100%_400px] bg-no-repeat"
+      >
+        <div
+          class="bg-[url('/static/images/banner-three.png')] bg-[length:600px_400px] bg-no-repeat bg-top-center relative"
+        >
+          <div class="p-4 pt-[340px]">
             <div
-              class="container overflow-hidden rounded-md bg-foreground drop-shadow-md"
+              class="container overflow-hidden rounded-md bg-foreground drop-shadow-md py-8"
             >
               <div class="p-4">
                 <h2 class="font-bold text-2xl">Sportsline</h2>
@@ -645,7 +648,7 @@
                 </ul>
                 <a
                   href="#"
-                  class="text-base uppercase text-accent hover:text-accent active:text-accent-dark flex items-center gap-2 flex-wrap"
+                  class="text-base uppercase text-accent hover:text-accent active:text-accent-dark flex items-center gap-2 flex-wrap pt-4"
                   >What our daily routine
                   <span
                     ><img src="/static/images/arrow-right.svg" alt="" /></span
@@ -657,15 +660,15 @@
       </section>
       <!-- Sponsor posts -->
       <section class="mb-8">
-        <div class="">
-          <header class="section-header container">
-            <h2 class="section-header__text">
-              read awesome article of our sponsors
-            </h2>
-          </header>
-          <div class="py-4 px-2">
+        <div>
+          <div class="container">
+            <header class="section-header">
+              <h2 class="section-header__text">MORE TOP READS</h2>
+            </header>
+          </div>
+          <div class="py-8 px-2 md:container">
             <ul
-              class="snap-x scroll-smooth pb-2 overflow-hidden overflow-x-auto grid grid-cols-[200px,_200px,_200px,_200px] gap-6"
+              class="snap-x scroll-smooth overflow-hidden overflow-x-auto grid grid-cols-[200px,_200px,_200px,_200px] gap-6 md:grid-cols-4"
             >
               <li class="snap-start">
                 <div>
@@ -742,7 +745,7 @@
     </main>
     <footer>
       <div class="bg-footer">
-        <div class="container">
+        <div class="mx-auto max-w-[400px]">
           <div class="py-10">
             <div class="mb-8 flex flex-col justify-center gap-6 items-center">
               <h1 class="font-bold text-3xl">Sportblog</h1>
@@ -798,7 +801,8 @@
                 </h2>
                 <p class="text-text text-center">
                   Filter out the noise and nurture your inbox with health and
-                  wellness advice that’s inclusive and rooted in medical expertise.
+                  wellness advice that’s inclusive and rooted in medical
+                  expertise.
                 </p>
                 <div class="w-full">
                   <form class="flex flex-col gap-2 max-w-[400px] mx-auto">
@@ -821,8 +825,8 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-wrap justify-around gap-4 ">
-                <ul class="grid grid-cols-2 gap-4 text-sm">
+              <div class="flex flex-wrap justify-evenly gap-4">
+                <ul class="grid grid-cols-2 flex-1 gap-4 text-sm text-center">
                   <li>
                     <a
                       href="#"
@@ -888,11 +892,11 @@
                   </li>
                 </ul>
                 <p class="text-text-lite text-justify text-sm">
-                  © 20022-2022 Sportblog Media a Red Ventures Company. All rights
-                  reserved. Our website services, content, and products are for
-                  informational purposes only. Sportblog Media does not provide
-                  medical advice, diagnosis, or treatment. See additional
-                  information.
+                  © 20022-2022 Sportblog Media a Red Ventures Company. All
+                  rights reserved. Our website services, content, and products
+                  are for informational purposes only. Sportblog Media does not
+                  provide medical advice, diagnosis, or treatment. See
+                  additional information.
                 </p>
               </div>
             </div>
